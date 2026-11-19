@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="My-Properti adalah layanan jual, beli, dan sewa properti. Kenali layanan kami dan jelajahi katalog properti.">
+<meta name="theme-color" content="#182c24">
+<title>My-Properti | Jual, Beli & Sewa Properti</title>
+<link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+<div class="top wrap">
+<a class="brand" href="#beranda"><span class="mark" aria-hidden="true">⌂</span> My<span>-Properti</span></a>
+<nav aria-label="Navigasi utama"><a href="#tentang">Tentang</a><a href="#layanan">Layanan</a><a href="#properti">Properti</a><a href="#kontak">Kontak</a></nav>
+</div>
+</header>
+<main id="beranda">
+<section class="hero wrap">
+<img src="img/villa.jpg" alt="Vila modern dengan kolam renang" fetchpriority="high">
+<div class="hero-copy">
+<p class="eyebrow">JUAL · BELI · SEWA</p>
+<h1>Temukan ruang<br>untuk <em>cerita baru.</em></h1>
+<p>Kenali layanan My-Properti untuk mencari hunian, menjual aset, atau menemukan tempat sewa yang sesuai kebutuhanmu.</p>
+</div>
+</section>
+<section id="tentang" class="wrap intro">
+<div><p class="eyebrow">TENTANG KAMI</p><h2>Kenali My-Properti</h2></div>
+<p>My-Properti bergerak di bidang properti dengan tiga layanan utama, yaitu jual, beli, dan sewa. Kami hadir untuk pemilik yang ingin menawarkan asetnya serta calon pembeli dan penyewa yang sedang mencari tempat sesuai kebutuhan dan anggaran.</p>
+</section>
+<section id="layanan" class="services">
+<div class="wrap">
+<p class="eyebrow">LAYANAN KAMI</p><h2>Apa kebutuhan propertimu?</h2>
+<div class="grid">
+<article><span class="service-icon" aria-hidden="true">↗</span><h3>Jual properti</h3><p>Siapkan informasi seperti lokasi, luas, foto, dan harga agar calon pembeli mudah mengenali aset yang kamu tawarkan.</p></article>
+<article><span class="service-icon" aria-hidden="true">⌂</span><h3>Beli properti</h3><p>Bandingkan pilihan berdasarkan area, tipe hunian, dan anggaran sebelum menentukan properti yang ingin kamu lihat.</p></article>
+<article><span class="service-icon" aria-hidden="true">◇</span><h3>Sewa properti</h3><p>Telusuri hunian dengan mempertimbangkan durasi sewa, fasilitas, dan akses ke tempat yang sering kamu kunjungi.</p></article>
+</div>
+</div>
+</section>
+<section id="properti" class="wrap listings">
+<div class="listing-head"><div><p class="eyebrow">KATALOG</p><h2>Jelajahi properti</h2></div>
+<div class="filters" role="group" aria-label="Filter properti"><button type="button" data-filter="all" aria-pressed="true">Semua</button><button type="button" data-filter="jual" aria-pressed="false">Dijual</button><button type="button" data-filter="sewa" aria-pressed="false">Disewa</button></div></div>
+<div class="grid listing-grid">
+<article class="property" data-type="jual">
+<div class="photo"><img src="img/rumah.jpg" alt="Fasad rumah modern" loading="lazy"><span>Dijual</span></div>
+<div class="details"><p class="place">Sentul, Bogor</p><h3>Rumah Modern Sentul</h3><p class="price">Rp1,85 miliar</p><p>3 kamar tidur · 135 m²</p></div>
+</article>
+<article class="property" data-type="sewa">
+<div class="photo"><img src="img/apartemen.jpg" alt="Interior ruang keluarga bernuansa netral" loading="lazy"><span>Disewa</span></div>
+<div class="details"><p class="place">Jakarta Selatan</p><h3>Apartemen Urban</h3><p class="price">Rp7,5 juta / bulan</p><p>2 kamar tidur · 58 m²</p></div>
+</article>
+<article class="property" data-type="jual">
+<div class="photo"><img src="img/hunian.jpg" alt="Interior hunian modern dengan pencahayaan alami" loading="lazy"><span>Dijual</span></div>
+<div class="details"><p class="place">Cikarang, Bekasi</p><h3>Hunian Keluarga Cikarang</h3><p class="price">Rp1,25 miliar</p><p>3 kamar tidur · 105 m²</p></div>
+</article>
+</div>
+</section>
+<section id="kontak" class="contact">
+<div class="wrap contact-grid">
+<div>
+<p class="eyebrow">KONTAK</p><h2>Hubungi My-Properti</h2>
+<p class="contact-intro">Ceritakan properti yang kamu cari atau tawarkan. Isi formulir untuk membuka pesan di aplikasi emailmu.</p>
+<dl>
+<div><dt>Email</dt><dd><a id="contact-email" href="mailto:albanifarel@gmail.com">albanifarel@gmail.com</a></dd></div>
+<div><dt>Area layanan</dt><dd>Bogor, Jakarta Selatan, dan Bekasi</dd></div>
+<div><dt>Jam operasional</dt><dd>Senin–Sabtu, 09.00–17.00 WIB</dd></div>
+</dl>
+</div>
+<form id="contact-form" class="contact-form" aria-describedby="contact-note">
+<p id="contact-note" class="note">Pesan akan terbuka di aplikasi email. Periksa isinya sebelum dikirim.</p>
+<label>Nama<input name="nama" autocomplete="name" required maxlength="100" placeholder="Nama kamu"></label>
+<label>Keperluan<select name="keperluan" required>
+<option>Jual properti</option><option>Beli properti</option><option>Sewa properti</option><option>Jadwalkan survei</option><option value="lainnya">Lainnya</option>
+</select></label>
+<label id="other-topic" hidden>Keperluan lainnya<input name="keperluan_lain" placeholder="Tulis keperluan kamu" maxlength="100" disabled></label>
+<label>Pesan<textarea name="pesan" rows="4" required maxlength="1000" placeholder="Tulis kebutuhan atau detail properti kamu."></textarea></label>
+<button type="submit">Kirim</button>
+<p id="contact-status" class="status" role="status"></p>
+</form>
+</div>
+</section>
+</main>
+<footer><div class="wrap foot"><span class="brand"><span class="mark" aria-hidden="true">⌂</span> My<span>-Properti</span></span><p>Jual, beli, dan sewa properti</p></div></footer>
+</body>
+</html>
